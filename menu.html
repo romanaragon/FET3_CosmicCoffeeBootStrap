@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Coffee</title>
+    <link rel = "stylesheet" href = "node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel = "stylesheet" href = "styles.css">
+  </head>
+
+<body class="container">
+    <nav class="navbar navbar-expand-sm navbar-light bg-#ffffff">
+        <a class="navbar-brand" href ="index.html"><img src = "JustName-01.png" width="50px"></a>
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNavDropdown" 
+          aria-controls="navbarNavDropdown" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a 
+                      class="nav-link dropdown-toggle"  
+                      id ="navbarDropdownMenuLink" 
+                      role="button" 
+                      data-bs-toggle="dropdown" 
+                      aria-haspopup="true" 
+                      aria-expanded="false">
+                    Menu/Order
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="index.html">Home</a>
+                        <a class="dropdown-item" href="contact.html">Contact</a>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+     </nav>
+  <br>
+  <br>
+    <div class = "container" id="centereditems">
+      <div class = "row justify-content-center">
+        <div class = "col-auto">
+          <img src = "/Users/romanaragon/Desktop/Code/PROMINEO/02_FET/03_BOOTSTRAP/ASSIGNMENT/Logo-01.png" class="logo" height="250px">
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">CosmoTado</th>
+            <td>2 Espresso shots with 2 ounces of milk</td>
+            <td>$4</td>
+          </tr>
+          <tr>
+            <th scope="row">Astroccunio</th>
+            <td>2 Espresso shots, foamed milk, cinnamon sprinkle</td>
+            <td>$4</td>
+          </tr>
+          <tr>
+            <th scope="row">Roswell Incident Latte</th>
+            <td>2 Shots of espresso with steamed milk, chile powder</td>
+            <td>$5</td>
+          </tr>
+          <tr>
+            <th scope="row">Dark Matter Mocha</th>
+            <td>2 Shots of espresso, steamed milk, mocha powder</td>
+            <td>$5</td>
+          </tr>
+          <tr>
+            <th scope="row">Light Year Latte</th>
+            <td>3 Shots of espresso, steamed milk, vanilla syrup</td>
+            <td>$5</td>
+          </tr>
+          <tr>
+            <th scope="row">The Grey's Latte</th>
+            <td>3 Shots of espresso, steamed milk, honey syrup, cinnamon</td>
+            <td>$5</td>
+          </tr>
+          <tr>
+            <th scope="row">Solstice Roast</th>
+            <td>Drip coffee(1 free refill)</td>
+            <td>$2</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <h4>Please choose your drink</h4>
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-md">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  CosmoTado
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Astroccunio
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Roswell Incident Latte
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Dark Matter Mocha
+                </label>
+              </div>
+          </div>
+          <div class = "col-md">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Light Year Latte
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  The Grey's Latte
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Solstice Roast
+                </label>
+              </div>
+          </div>
+      </div>
+      <br>
+      <br>
+      <h4>Order Contact Information</h4>
+      <div class="mb-1">
+        <input type="fullname" class="form-control" id="exampleFormControlInput1" placeholder="Full Name">
+      </div>
+      <div class="mb-1">
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+      </div>
+      <div class="mb-1">
+        <input type="phonenumber" class="form-control" id="exampleFormControlInput1" placeholder="Phone Number">
+      </div>
+      <div class="text-center">
+      <button type="button" class="btn btn-secondary">Submit Order</button>
+      </div>
+      <br>
+      <br>
+
+     <script src = "node_modules/jquery/dist/jquery.js"></script>
+     <script src = "node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
